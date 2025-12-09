@@ -1,0 +1,198 @@
+/*
+Name: Guiao, Karl Christian D.
+Section: WD - 303 | WEBPUB
+Activity: Contact Page for a Local Business
+*/
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("../images/salon.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-color: #1f1d1d; 
+    color: white;
+}
+
+/* Style for Navigation */
+nav {
+    background-color: #141313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; 
+    z-index: 1000;
+}
+
+#cs-logo {
+    width: auto; 
+    max-width: 130px; 
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin-left: -25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.3s;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    color: #ffec45;
+    transform: scale(1.2);
+}
+
+/* Styles for Contact Cards */
+.contact-header {
+  text-align: center;
+  padding: 100px 20px 40px;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  color: #eedd46;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  justify-content: center;
+}
+
+.contact-form,
+.contact-details {
+  background: rgba(31, 29, 29, 0.55); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+  padding: 30px;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 320px;
+  box-shadow: 0 0 30px rgba(238, 221, 70, 0.15); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form:hover,
+.contact-details:hover {
+  box-shadow: 0 0 40px rgba(238, 221, 70, 0.5);
+  transform: translateY(-5px); 
+}
+
+.contact-form h2,
+.contact-details h2 {
+  color: #eedd46;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1); 
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #8f8529;
+  box-shadow: 0 0 5px #eedd46;
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #b6a50f;
+  color: #141313;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #413b06;
+  transform: scale(1.03);
+}
+
+.contact-details p,
+.contact-details a {
+  font-size: 1.05rem;
+  padding-bottom: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: #ffec45;
+}
+
+.contact-details .map {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  margin: 20px 0;
+  border: 2px solid rgba(238, 221, 70, 0.2);
+}
+
+/* Styles for social icons */
+.social-links {
+  display: flex;
+  gap: 25px;
+}
+
+.social-links img {
+  width: 35px;
+  transition: transform 0.3s;
+  filter: invert();
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* Styles for Footer */
+footer {
+    background-color: #141313;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+}
